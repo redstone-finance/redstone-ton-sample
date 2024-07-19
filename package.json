@@ -1,0 +1,26 @@
+{
+  "name": "ton-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/redstone-finance/ton-test.git",
+  "author": "Łukasz Kalbarczyk <lukasz@redstone-finance",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && yarn tsc --build tsconfig.json",
+    "run-script": "npx blueprint run --testnet --mnemonic runTest"
+  },
+  "devDependencies": {
+    "@ton/blueprint": "^0.19.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=12.0.0",
+    "react": "^18.3.1",
+    "typechain": "^8.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "@redstone-finance/ton-connector": "0.6.0-1"
+  },
+  "packageManager": "yarn@4.3.1"
+}
